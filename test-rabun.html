@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Rabun Jauh</title>
+    <link rel="stylesheet" href="css/test-rabun.css">
+    <link rel="icon" href="assets/icons/iconWeb.svg">
+</head>
+<body class="smooth-scroll-wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar scrolling-active">
+        <div class="logo" onclick="backToHome()">
+            <img src="assets/icons/logo.svg" alt="logo">
+            <img src="assets/icons/logo-black.svg" alt="logo">
+        </div>
+
+        <div class="navbar-right">
+            <ul class="navbar-text">
+                <li class="li" onclick="backToHome()">Beranda</li>
+                <li class="li" id="blog">Blog</li>
+                <li class="dropdown"> 
+                    <button class="dropbtn">Tes Mata
+                        <img class="arrow-down" src="assets/icons/arrow-down.svg" alt="arrow down logo">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="test-rabun.html?#">Test Rabun Jauh</a>
+                        <a href="test-buta-warna.html">Test Buta Warna</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="search-logo">
+                <img src="assets/icons/search.svg" alt="search logo">
+            </div>
+
+            <div class="hamburger-logo">
+                <img src="assets/icons/hamburger.svg" alt="hamburger logo">
+            </div>
+
+            <div class="close-logo">
+                <img src="assets/icons/close-btn.svg" alt="hamburger logo">
+            </div>
+        </div>
+
+        <ul class="navbar-text-mobile">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="all-blog.html">Blog</a></li>
+            <li><a href="test-rabun.html?#">Tes Rabun Jauh</a></li>
+            <li><a href="test-buta-warna.html">Tes Buta Warna</a></li>
+        </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- MAIN -->
+    <main>
+        <div class="test-rabun main-content">
+            <h1>TES MATA RABUN JAUH</h1>
+            <ul class="list-circle">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="test-character">
+                <h2 class="test-character" >TGDSESJD</h2>
+            </div>
+            <form class="form" action="#" onsubmit="btnLanjutHandling()">
+                <div class="wrapper-input-check">
+                    <input type="text" id="input-test" maxlength="8" autocomplete="off" onkeydown="limit(this);" onkeyup="limit(this);">
+                    <img src="assets/icons/check-circle-icon.svg" alt="check circle icon">
+                </div>
+                <p>Huruf tidak dibedakan antara huruf kapital atau huruf kecil</p>
+                <input type="submit" value="submit">
+                <button class="btn-lanjut" id="mulai-tes">
+                    <p>Lanjut</p>
+                    <div class="block"></div>
+                </button>
+                <img class="error-input" src="assets/icons/error-input.svg" alt="error input">
+                <img class="error-input-mobile" src="assets/icons/error-input-mobile.svg" alt="error input">
+            </form>
+        </div>
+
+        <div class="test-selesai main-content">
+            <h1>TES MATA RABUN</h1>
+            <img src="assets/icons/check-circle-icon.svg" alt="check circle icon">
+            <p>Selamat telah menyelesaikan tes!</p>
+            <div class="wrapper-btn-test-selesai">
+                <button id="mulai-tes" onclick="backToHome()">
+                    <p>Selesai</p>
+                    <div class="block"></div>
+                </button>
+                <button onclick="mengulangiTest()" id="mulai-tes">
+                    <p>Mengulangi tes</p>
+                    <div class="block"></div>
+                </button>
+                <button class="btnSelesai" id="mulai-tes">
+                    <p>Hasil</p>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content hasil hasil-bagus">
+            <h2>Hasil</h2>
+            <p>Web ini tidak menggantikan saran dari dokter</p>
+            <img src="assets/icons/happy-emoji.svg" alt="happy emoji">
+            <h1>Mantap ! Penglihatanmu bagus <br> Tetap jaga Kesehatan mata kamu. </h1>
+            <p>Jangan lupa test mata kanan kamu juga ya !</p>
+            <div class="wrapper-btn-hasil">
+                <button id="mulai-tes" onclick="backToHome()">
+                    <p>Selesai</p>
+                    <div class="block"></div>
+                </button>
+                <button onclick="mengulangiTest()" id="mulai-tes">
+                    <p>Mengulangi tes</p>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content hasil hasil-lumayan">
+            <h2>Hasil</h2>
+            <p>Web ini tidak menggantikan saran dari dokter</p>
+            <img src="assets/icons/neutral-emoji.svg" alt="netural emoji">
+            <h1>Pengliatanmu Lumayan ! Kurangi Bermain Depan Gadget.</h1>
+            <p>Jangan lupa test mata kanan kamu juga ya !</p>
+            <div class="wrapper-btn-hasil">
+                <button id="mulai-tes" onclick="backToHome()">
+                    <p>Selesai</p>
+                    <div class="block"></div>
+                </button>
+                <button onclick="mengulangiTest()" id="mulai-tes">
+                    <p>Mengulangi tes</p>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content hasil hasil-buruk">
+            <h2>Hasil</h2>
+            <p>Web ini tidak menggantikan saran dari dokter</p>
+            <img src="assets/icons/sad-emoji.svg" alt="check circle icon">
+            <h1>Sepertinya penglihatanmu bermasalah <br> Segera Periksa ke dokter terdekat.</h1>
+            <p>Jangan lupa test mata kanan kamu juga ya !</p>
+            <div class="wrapper-btn-hasil">
+                <button id="mulai-tes" onclick="backToHome()">
+                    <p>Selesai</p>
+                    <div class="block"></div>
+                </button>
+                <button onclick="mengulangiTest()" id="mulai-tes">
+                    <p>Mengulangi tes</p>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- END MAIN -->
+
+    <!-- instrution -->
+    <div class="instruction-bg">
+        <div class="instruction-container">
+            <div class="container">
+                <div class="skip" id="skip">
+                    <p>Lewati</p>
+                    <img src="assets/icons/arrow-forward-outline.svg" alt="">
+                </div>
+                <div class="instruction 1" id="i1">
+                    <div class="content">
+                        <div class="image">
+                            <img src="assets/images/instruction-1.png" alt="">
+                        </div>
+                        <p class="content-p">Pastikan Jarak anda dengan layar laptop sepanjang 30cm.
+                            (Disarankan menggunakan desktop atau laptop, tidak disarankan mengunakan hp)</p>
+                        <div class="btn">
+                            <div class="button lanjut" id="mulai-tes">
+                                <p>Lanjut</p>
+                                <div class="block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="instruction 2" id="i2">
+                    <div class="content">
+                        <div class="image">
+                            <img src="assets/images/instruction-2.png" alt="">
+                        </div>
+                        <p class="content-p">Tutup mata kiri atau kanan Anda. Setelah tesnya selesai gantian dengan mata kiri atau kanan Anda.</p>
+                        <div class="btn">
+                            <div class="button kembali" id="mulai-tes">
+                                <p>Kembali</p>
+                                <div class="block"></div>
+                            </div>
+                            <div class="button lanjut" id="mulai-tes">
+                                <p>Lanjut</p>
+                                <div class="block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instruction 3" id="i3">
+                    <div class="content">
+                        <div class="image">
+                            <img src="assets/images/instruction-3.png" alt="">
+                        </div>
+                        <p class="content-p">Jika sudah siap mari kita coba !!!
+                            Selamat Mencoba !</p>
+                        <div class="btn">
+                            <div class="button kembali" id="mulai-tes">
+                                <p>Kembali</p>
+                                <div class="block"></div>
+                            </div>
+                            <div class="button mulai" id="mulai-tes">
+                                <p>Mulai</p>
+                                <div class="block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end instruction -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-text">
+            <img src="assets/icons/logo.svg" alt="">
+            <p>Copyright © 2022 Macro Team</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/test-rabun.js"></script>
+</body>
+</html>

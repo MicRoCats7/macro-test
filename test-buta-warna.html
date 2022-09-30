@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Buta Warna</title>
+    <link rel="stylesheet" href="css/test-buta-warna.css">
+    <link rel="icon" href="assets/icons/iconWeb.svg">
+</head>
+<body class="smooth-scroll-wrapper">
+    <!-- NAVBAR -->
+    <nav class="navbar scrolling-active">
+        <div class="logo" onclick="backToHome()">
+            <img src="assets/icons/logo.svg" alt="logo">
+            <img src="assets/icons/logo-black.svg" alt="logo">
+        </div>
+
+        <div class="navbar-right">
+            <ul class="navbar-text">
+                <li class="li" onclick="backToHome()">Beranda</li>
+                <li class="li" id="blog">Blog</li>
+                <li class="dropdown"> 
+                    <button class="dropbtn">Tes Mata
+                        <img class="arrow-down" src="assets/icons/arrow-down.svg" alt="arrow down logo">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="test-rabun.html">Tes Rabun Jauh</a>
+                        <a href="#">Tes Buta Warna</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="search-logo">
+                <img src="assets/icons/search.svg" alt="search logo">
+            </div>
+
+            <div class="hamburger-logo">
+                <img src="assets/icons/hamburger.svg" alt="hamburger logo">
+            </div>
+
+            <div class="close-logo">
+                <img src="assets/icons/close-btn.svg" alt="hamburger logo">
+            </div>
+        </div>
+
+        <ul class="navbar-text-mobile">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="all-blog.html">Blog</a></li>
+            <li><a href="test-rabun.html?#">Tes Rabun Jauh</a></li>
+            <li><a href="#">Tes Buta Warna</a></li>
+        </ul>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <main>
+        <div class="wrapper-test">
+            <p class="soal-keberapa">1 dari 8 kuis</p>
+
+            <div class="wrapper-soals-lg">
+                <div class="wrapper-soals">
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-1.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 8
+                                    <input class="input" id="radio-1-soal-1" type="radio" value="Angka 8" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-1"></label>
+                                </label>
+                                <label class="container">Angka 2
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-2-soal-1" type="radio" value="Angka 2" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-1"></label>
+                                </label>
+                                <label class="container">Angka 50
+                                    <input class="input" id="radio-3-soal-1" type="radio" value="Angka 50" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-1"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-2.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Kelinci
+                                    <input class="input" id="radio-1-soal-2" type="radio" value="Kelinci" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-2"></label>
+                                </label>
+                                <label class="container">Kupu - kupu
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-2-soal-2" type="radio" value="Kupu - kupu" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-2"></label>
+                                </label>
+                                <label class="container">Ayam
+                                    <input class="input" id="radio-3-soal-2" type="radio" value="Ayam" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-2"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-3.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 6
+                                    <input class="input" id="radio-1-soal-3" type="radio" value="Angka 6" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-3"></label>
+                                </label>
+                                <label class="container">Angka 10
+                                    <input class="input" id="radio-2-soal-3" type="radio" value="Angka 10" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-3"></label>
+                                </label>
+                                <label class="container">Angka 8
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-3-soal-3" type="radio" value="Angka 8" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-3"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-4.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 3
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-1-soal-4" type="radio" value="Angka 3" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-4"></label>
+                                </label>
+                                <label class="container">Angka 8
+                                    <input class="input" id="radio-2-soal-4" type="radio" value="Angka 8" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-4"></label>
+                                </label>
+                                <label class="container">Angka 9
+                                    <input class="input" id="radio-3-soal-4" type="radio" value="Angka 9" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-4"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-5.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 7
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-1-soal-5" type="radio" value="Angka 7" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-5"></label>
+                                </label>
+                                <label class="container">Angka 8
+                                    <input class="input" id="radio-2-soal-5" type="radio" value="Angka 8" name="soal">
+                                    <label class="checkmark"for="radio-2-soal-5"></label>
+                                </label>
+                                <label  class="container">Angka 9
+                                    <input class="input" id="radio-3-soal-5" type="radio" value="Angka 9" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-5"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-6.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 10
+                                    <input class="input" id="radio-1-soal-6" type="radio" value="Angka 10" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-6"></label>
+                                </label>
+                                <label class="container">Angka 8
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-2-soal-6" type="radio" value="Angka 8" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-6"></label>
+                                </label>
+                                <label class="container">Angka 3    
+                                    <input class="input" id="radio-3-soal-6" type="radio" value="Angka 3" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-6"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-7.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 2
+                                    <input class="input" id="radio-1-soal-7" type="radio" value="Angka 2" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-7"></label>
+                                </label>
+                                <label class="container">Angka 7
+                                    <input class="input" id="radio-2-soal-7" type="radio" value="Angka 7" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-7"></label>
+                                </label>
+                                <label class="container">Angka 3
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-3-soal-7" type="radio" value="Angka 3" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-7"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper-soal">
+                        <div class="img-soal">
+                            <img src="assets/images/test-buta-warna-8.png" alt="gambar test buta warna">
+                        </div>
+        
+                        <div class="soal">
+                            <h1>Apa yang kamu lihat</h1>
+                            <div class="jawab">
+                                <label class="container">Angka 8
+                                    <input class="input" id="radio-1-soal-8" type="radio" value="Angka 8" name="soal">
+                                    <label class="checkmark" for="radio-1-soal-8"></label>
+                                </label>
+                                <label class="container">Angka 4
+                                    <img class="check-logo" src="assets/icons/check-green.svg" alt="icon check green">
+                                    <input class="input" id="radio-2-soal-8" type="radio" value="Angka 4" name="soal">
+                                    <label class="checkmark" for="radio-2-soal-8"></label>
+                                </label>
+                                <label class="container">Angka 5
+                                    <input class="input" id="radio-3-soal-8" type="radio" value="Angka 5" name="soal">
+                                    <label class="checkmark" for="radio-3-soal-8"></label>
+                                </label>
+                                <p class="jawaban">Jawaban Anda Benar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="wrapper-btn">
+                <button class="mulai-tes" id="btn-submit">
+                    <p>Submit</p>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes lanjut-btn" id="btn-lanjut" disabled>
+                    <p>Lanjut</p>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes" id="btn-selesai">
+                    <p>Selesai</p>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hasil hasil-buruk-banget">
+            <h1>Hasil Buta Warna</h1>
+            <div class="img">
+                <img src="assets/icons/buruk-banget-icon.svg" alt="danger icon">
+            </div>
+            <p>Ini kamu jawabnya sudah serius atau belum? Karena kalau sudah serius, itu pertanda kalau kamu benar-benar mengalami gangguan mata yang mengarah ke buta warna. Segeralah ke dokter untuk mengetahui secara pasti.</p>
+            <div class="wrapper-btn wrapper-btn-hasil">
+                <button class="mulai-tes" onclick="backToHome()" style="border-right: 1px solid #000;">
+                    <span>Selesai</span>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes" onclick="mengulagiTest()" style="border-right: 1px solid #000;">
+                    <span>Ulangi Tes</span>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hasil hasil-buruk">
+            <h1>Hasil Buta Warna</h1>
+            <div class="img">
+                <img src="assets/icons/buruk-icon.svg" alt="danger icon">
+            </div>
+            <p>Uuum, dari delapan pertanyaan, kamu hanya berhasil menjawab satu dan dua. Sangat disarankan untuk ke dokter untuk mengecek apakah kamu mendapat buta warna atau tidak. Tetapi jika belum yakin, Cobalah untuk melakukan tes buta warna yang lain</p>
+            <div class="wrapper-btn wrapper-btn-hasil">
+                <button class="mulai-tes" onclick="backToHome()" style="border-right: 1px solid #000;">
+                    <span>Selesai</span>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes" onclick="mengulagiTest()" style="border-right: 1px solid #000;">
+                    <span>Ulangi Tes</span>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hasil hasil-lumayan">
+            <h1>Hasil Buta Warna</h1>
+            <div class="img">
+                <img src="assets/icons/lumayan-icon.svg" alt="danger icon">
+            </div>
+            <p>Bisa jadi ada dua hal di sini yang jadi masalahmu. Yang pertama memang kamu kesulitan membedakan warna, yang kedua kamu kesulitan untuk membacanya. Apapun itu, pergi ke dokter mata untuk diperiksa akan menjadi pilihan yang baik.</p>
+            <div class="wrapper-btn wrapper-btn-hasil">
+                <button class="mulai-tes" onclick="backToHome()" style="border-right: 1px solid #000;">
+                    <span>Selesai</span>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes" onclick="mengulagiTest()" style="border-right: 1px solid #000;">
+                    <span>Ulangi Tes</span>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hasil hasil-bagus">
+            <h1>Hasil Buta Warna</h1>
+            <div class="img">
+                <img src="assets/icons/bagus-icon.svg" alt="danger icon">
+            </div>
+            <p>Penglihatan masih bisa dipercaya. Toh satu kesalahan mungkin bisa datang dari kamu yang salah memencet jawaban atau memang salah mengira angka dan gambar. </p>
+            <div class="wrapper-btn wrapper-btn-hasil">
+                <button class="mulai-tes" onclick="backToHome()" style="border-right: 1px solid #000;">
+                    <span>Selesai</span>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes" onclick="mengulagiTest()" style="border-right: 1px solid #000;">
+                    <span>Ulangi Tes</span>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="hasil hasil-bagus-banget">
+            <h1>Hasil Buta Warna</h1>
+            <div class="img">
+                <img src="assets/icons/bagus-banget-icon.svg" alt="danger icon">
+            </div>
+            <p>Tidak perlu diragukan lagi kalau penglihatanmu berfungsi normal. Tak hanya itu, matamu masih menangkap warna-warna dengan tajam dan mampu membedakannya. Pertahankan terus dengan hidup sehat.</p>
+            <div class="wrapper-btn wrapper-btn-hasil">
+                <button class="mulai-tes" onclick="backToHome()" style="border-right: 1px solid #000;">
+                    <span>Selesai</span>
+                    <div class="block"></div>
+                </button>
+                <button class="mulai-tes" onclick="mengulagiTest()" style="border-right: 1px solid #000;">
+                    <span>Ulangi Tes</span>
+                    <div class="block"></div>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-text">
+            <img src="assets/icons/logo.svg" alt="">
+            <p>Copyright © 2022 Macro Team</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/test-buta-warna.js"></script>
+</body>
+</html>
